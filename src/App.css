@@ -1,0 +1,290 @@
+/* Simple, human-friendly fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fffaf7;
+  color: #2d2d2d;
+  line-height: 1.5;
+}
+
+/* Soft, natural navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #ffffff;
+  border-bottom: 1px solid #ffe0d4;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #d4785c;
+  letter-spacing: -0.3px;
+}
+
+.nav div {
+  display: flex;
+  gap: 28px;
+}
+
+.nav a {
+  color: #4a4a4a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #d4785c;
+}
+
+/* Sections with breathing space */
+.section {
+  padding: 70px 8%;
+}
+
+.light {
+  background: #fffaf7;
+}
+
+/* Home Section - warm & welcoming */
+#home {
+  background: #fffaf7;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#home h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+
+#home p {
+  font-size: 1.2rem;
+  color: #d4785c;
+  font-weight: 500;
+}
+
+/* About Section - personal touch */
+#about {
+  background: #ffffff;
+  border-top: 1px solid #ffe0d4;
+  border-bottom: 1px solid #ffe0d4;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #5a5a5a;
+  text-align: center;
+}
+
+/* Section titles - hand-drawn feel */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 45px;
+  color: #2d2d2d;
+  letter-spacing: -0.5px;
+}
+
+/* Skills - soft pill design */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills-container .card {
+  background: #fff2ed;
+  padding: 8px 20px;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #d4785c;
+  border: 1px solid #ffe0d4;
+  transition: all 0.2s ease;
+}
+
+.skills-container .card:hover {
+  background: #d4785c;
+  color: white;
+  border-color: #d4785c;
+}
+
+/* Projects - 2 per row, relaxed card design */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Soft, personal project cards */
+.project-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  border: 1px solid #f0e2db;
+  transition: all 0.25s ease;
+}
+
+.project-card:hover {
+  border-color: #d4785c;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+}
+
+.project-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2d2d2d;
+}
+
+.project-tech {
+  display: inline-block;
+  background: #fff2ed;
+  color: #d4785c;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+}
+
+.project-date {
+  color: #aaa;
+  font-size: 0.7rem;
+  margin-bottom: 14px;
+  font-style: italic;
+}
+
+.project-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #6a6a6a;
+  margin-bottom: 18px;
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  background: #fff2ed;
+  color: #d4785c;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid #ffe0d4;
+  transition: all 0.2s ease;
+}
+
+.project-links a:hover {
+  background: #d4785c;
+  color: white;
+  border-color: #d4785c;
+}
+
+/* Contact - simple & warm */
+#contact {
+  background: #ffffff;
+  text-align: center;
+  border-top: 1px solid #ffe0d4;
+}
+
+#contact p {
+  margin: 12px 0;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+#contact a {
+  color: #d4785c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+#contact a:hover {
+  color: #b85c3a;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 18px 5%;
+  }
+  
+  .nav div {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  #home h1 {
+    font-size: 2.5rem;
+  }
+  
+  #home p {
+    font-size: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section {
+    padding: 50px 5%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projects-container {
+    gap: 25px;
+    max-width: 800px;
+  }
+}
