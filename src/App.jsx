@@ -66,8 +66,8 @@ function App() {
               for secure blockchain-based voting and validation.
             </p>
             <div className="project-links">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <FaGithub /> Code (Coming Soon)
+              <a href="https://github.com/Byagarimamatha/Blockchain-Based-Online-Voting-System" target="_blank" rel="noopener noreferrer">
+                <FaGithub /> Code
               </a>
             </div>
           </div>
